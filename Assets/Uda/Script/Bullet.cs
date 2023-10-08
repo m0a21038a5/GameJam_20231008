@@ -7,6 +7,12 @@ public class Bullet : MonoBehaviour
     public Vector3 TargetPosition;
     public float RushSpeed;
 
+    public bool isFloor;
+    public bool isPlayer_Sleeping;
+    public bool isPlayer;
+
+    public ScoreText st;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +29,10 @@ public class Bullet : MonoBehaviour
         if(Mathf.Approximately(this.transform.position.x, TargetPosition.x) && Mathf.Approximately(this.transform.position.y, TargetPosition.y) && Mathf.Approximately(this.transform.position.z, TargetPosition.z))
         {
             Destroy(this.gameObject);
+            if(isPlayer_Sleeping)
+            {
+                st.PlusScore();
+            }
         }
     }
 

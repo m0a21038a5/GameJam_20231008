@@ -28,6 +28,15 @@ public class Shoot : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Vector3.Distance(FirstPoint, origin)))
             {
                 TargetPosition = hit.point;
+                if (hit.collider.gameObject.CompareTag("Floor"))
+                {
+                    B.GetComponent<Bullet>().isFloor = true;
+                }
+                else if(hit.collider.gameObject.CompareTag("Player"))
+                {
+                    B.GetComponent<Bullet>().st = GetComponent<ScoreText>();
+                    B.GetComponent<Bullet>().isPlayer_Sleeping = true;
+                }                
             }
             else
             {
@@ -35,7 +44,6 @@ public class Shoot : MonoBehaviour
             }
             B.GetComponent<Bullet>().TargetPosition = TargetPosition;
             B.GetComponent<Bullet>().RushSpeed = ShootSpeed;
-            st.PlusScore();
         }
     }
 }
