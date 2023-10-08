@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class Countdown : MonoBehaviour
 {
     [SerializeField] Text TimeText;
-    [SerializeField] float MaxCount;
+    [SerializeField] public float MaxCount;
+    [SerializeField] float EndCount;
+    [SerializeField] FadeManager fd;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,17 @@ public class Countdown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MaxCount -= Time.deltaTime;
+        
         TimeText.text = MaxCount.ToString("f1");
+        if(MaxCount <= 0)
+        {
+            fd.OnFadeOutWaitKOMIKOMI("ResultScene");
+        }
+        else
+        {
+            MaxCount -= Time.deltaTime;
+        }
     }
+
+   
 }
