@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour
 {
-    [SerializeField] float ScorePlusCount;
-    float ScoreCount;
+    [SerializeField] int ScorePlusCount;
+    int ScoreCount;
     [SerializeField] Text Scoretext;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class ScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scoretext.text = "Score : " + ScoreCount.ToString("f1") + "p";
+        Scoretext.text = "Score : " + ScoreCount + "p";
     }
 
     public void PlusScore()
