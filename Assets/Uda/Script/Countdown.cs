@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class Countdown : MonoBehaviour
     void Update()
     {
         
-        TimeText.text = MaxCount.ToString("f1");
+        TimeText.text = String.Format("{0:00.00}", MaxCount);
         if(MaxCount <= 0)
         {
             fd.OnFadeOutWaitKOMIKOMI("ResultScene");
