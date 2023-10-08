@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, TargetPosition, RushSpeed);
+        transform.position = Vector3.MoveTowards(this.transform.position, TargetPosition, RushSpeed * Time.deltaTime);
 
         if(Mathf.Approximately(this.transform.position.x, TargetPosition.x) && Mathf.Approximately(this.transform.position.y, TargetPosition.y) && Mathf.Approximately(this.transform.position.z, TargetPosition.z))
         {
