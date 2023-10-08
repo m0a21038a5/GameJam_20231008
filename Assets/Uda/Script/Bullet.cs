@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public Vector3 TargetPosition;
     public float RushSpeed;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Sato/Test_Sato.unity
     guid: 16d9651e419be844ea42e7ce8e00d868
+  - enabled: 1
+    path: Assets/Result/ResultScene.unity
+    guid: 3f660d5380fb44344b1e38840057d63d
   m_configObjects: {}
