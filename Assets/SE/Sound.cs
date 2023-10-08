@@ -7,8 +7,6 @@ public class Sound : MonoBehaviour
     [SerializeField]
     private SoundManager soundManager;
 
-
-    // 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
