@@ -167,7 +167,7 @@ public class StudentStateManager : MonoBehaviour
         //
         else if (currentState == StudentState.nomal_slept)
         {
-
+            awakeUI.gameObject.SetActive(false);
         }
     }
 
@@ -182,6 +182,7 @@ public class StudentStateManager : MonoBehaviour
         awakeUI.gameObject.SetActive(true);
         //一定経過後、Falseにする。
         StartCoroutine(DelayOnAwake());
+        Debug.Log("起こされた");
 
 
         animator.SetBool("wakeUp", true);
