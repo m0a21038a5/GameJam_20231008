@@ -8,7 +8,6 @@ public class Countdown : MonoBehaviour
 {
     [SerializeField] Text TimeText;
     [SerializeField] public float MaxCount;
-    [SerializeField] float EndCount;
     [SerializeField] FadeManager fd;
     // Start is called before the first frame update
     void Start()

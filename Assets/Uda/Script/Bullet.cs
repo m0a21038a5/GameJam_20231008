@@ -13,6 +13,9 @@ public class Bullet : MonoBehaviour
 
     public ScoreText st;
 
+    public GameObject Student;
+    [SerializeField] GameObject HitEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +32,23 @@ public class Bullet : MonoBehaviour
         if(Mathf.Approximately(this.transform.position.x, TargetPosition.x) && Mathf.Approximately(this.transform.position.y, TargetPosition.y) && Mathf.Approximately(this.transform.position.z, TargetPosition.z))
         {
             Destroy(this.gameObject);
-            if(isPlayer_Sleeping)
+            Instantiate(HitEffect, TargetPosition, Quaternion.identity);
+            if (isPlayer_Sleeping)
             {
                 st.PlusScore();
+                Student.GetComponent<StudentStateManager>().OnAwake();
+            }
+            else if(isPlayer)
+            {
+                st.DecreaseScore();
+            }
+            else if(isFloor)
+            {
+
             }
         }
     }
 
+
+ 
 }

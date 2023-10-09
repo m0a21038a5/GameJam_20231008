@@ -9,6 +9,7 @@ public class Shoot : MonoBehaviour
     public Vector3 TargetPosition;
     [SerializeField] float ShootSpeed;
     [SerializeField] ScoreText st;
+    [SerializeField] GameObject ClickEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +29,23 @@ public class Shoot : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Vector3.Distance(FirstPoint, origin)))
             {
                 TargetPosition = hit.point;
-                if (hit.collider.gameObject.CompareTag("Floor"))
-                {
-                    B.GetComponent<Bullet>().isFloor = true;
-                }
-                else if(hit.collider.gameObject.CompareTag("Player"))
+                FirstPoint.z = 0.0f;
+                Instantiate(ClickEffect, FirstPoint, Quaternion.identity);
+                if (hit.collider.gameObject.CompareTag("Player") && hit.collider.GetComponent<StudentStateManager>().currentState == StudentStateManager.StudentState.sleep)
                 {
                     B.GetComponent<Bullet>().st = GetComponent<ScoreText>();
                     B.GetComponent<Bullet>().isPlayer_Sleeping = true;
-                }                
+                    B.GetComponent<Bullet>().Student = hit.collider.gameObject;
+                }
+                else if(hit.collider.gameObject.CompareTag("Player") && hit.collider.GetComponent<StudentStateManager>().currentState != StudentStateManager.StudentState.sleep)
+                {
+                    B.GetComponent<Bullet>().st = GetComponent<ScoreText>();
+                    B.GetComponent<Bullet>().isPlayer = true;
+                }
+                else if(hit.collider.gameObject.CompareTag("Floor"))
+                {
+                    B.GetComponent<Bullet>().isFloor = true;
+                }
             }
             else
             {
