@@ -410,38 +410,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d65db92ee1ad5644a8177816885460b, type: 3}
---- !u!1 &17816694 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 100578590}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &17816695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 100578590}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &17816696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17816694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &18747562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -638,10 +611,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1739096041}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!1001 &30015475
 PrefabInstance:
@@ -912,38 +882,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
   m_PrefabInstance: {fileID: 1141986151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &43019421 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 805511692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &43019422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 805511692}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &43019423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43019421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &44825957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,38 +940,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 935ba91ea5459eb4d8917d5e94bc3ddf, type: 3}
---- !u!1 &45541071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 220227575}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &45541072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 220227575}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &45541073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45541071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!4 &51754908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4943691492538304, guid: eae94336b6079e8469f20b721b0474cd, type: 3}
@@ -1674,10 +1590,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 17816696}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!4 &104359963 stripped
 Transform:
@@ -2121,10 +2034,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1522036314}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!1001 &141582130
 PrefabInstance:
@@ -2668,10 +2578,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 45541073}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!4 &221430505 stripped
 Transform:
@@ -5465,9 +5372,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1552731694}
     - targetCorrespondingSourceObject: {fileID: 5006449747254984733, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
       insertIndex: -1
       addedObject: {fileID: 23880704}
@@ -5747,38 +5651,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d65db92ee1ad5644a8177816885460b, type: 3}
---- !u!1 &453245118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 1001814570}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &453245119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 1001814570}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &453245120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453245118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &455119087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7086,10 +6963,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1592087423}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!1001 &607596533
 PrefabInstance:
@@ -9772,10 +9646,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 43019423}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!4 &806678574 stripped
 Transform:
@@ -10560,38 +10431,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
---- !u!1 &888616635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 1979594258}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &888616636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 1979594258}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &888616637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888616635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &891736679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12409,10 +12253,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 5006449747254984733, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 453245120}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!1001 &1004422414
 PrefabInstance:
@@ -15998,10 +15839,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1492224589}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!4 &1243489456 stripped
 Transform:
@@ -19011,38 +18849,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
   m_PrefabInstance: {fileID: 993562588}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1492224587 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 1240741178}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1492224588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 1240741178}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1492224589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492224587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &1493640507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19384,48 +19195,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1923972567}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!4 &1520610696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
   m_PrefabInstance: {fileID: 1768124951}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1522036312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 140231421}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1522036313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 140231421}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1522036314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522036312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &1527799765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19722,38 +19503,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4592770765900944, guid: 935ba91ea5459eb4d8917d5e94bc3ddf, type: 3}
   m_PrefabInstance: {fileID: 1657115193}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1552731692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 438696237}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1552731693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 438696237}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1552731694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552731692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &1558187157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20562,38 +20316,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bc798f368a5f214ba2ad9cc17bc9b80, type: 3}
---- !u!1 &1592087421 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 606906436}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1592087422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 606906436}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1592087423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592087421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!4 &1594633985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433388430019206, guid: 4f9d36e206efd9c408c4487f1d8c65af, type: 3}
@@ -22134,38 +21861,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb1204842363d949b4b739100f86523, type: 3}
---- !u!1 &1739096039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 28841049}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1739096040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 28841049}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1739096041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739096039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &1741603033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24749,38 +24449,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d0d657c1182735489e24a5ce302b99c, type: 3}
---- !u!1 &1923972565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 1520263215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1923972566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 1520263215}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1923972567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923972565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &1926852576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25663,10 +25336,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 888616637}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!1 &1980942850
 GameObject:
@@ -26036,43 +25706,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1990305421}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
 --- !u!4 &1990305419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408875789380054083, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
   m_PrefabInstance: {fileID: 1990305418}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1990305420 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8085296119665481794, guid: eb3cf201bdf81274b9effe05c6a54965, type: 3}
-  m_PrefabInstance: {fileID: 1990305418}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1990305421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990305420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 522ffb8394fe8d14e9624d09aad2c1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  sleepTimeList:
-  - 3
-  - 10
-  awakeTimeList:
-  - 5
-  - 13
-  MaxSleepTime: 0
-  currentSleepTime: 0
-  currentAwakeTime: 0
 --- !u!1001 &1993232635
 PrefabInstance:
   m_ObjectHideFlags: 0
