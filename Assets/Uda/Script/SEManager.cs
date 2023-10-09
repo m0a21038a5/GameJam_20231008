@@ -42,4 +42,19 @@ public class SEManager : MonoBehaviour
     {
         audioSource.PlayOneShot(SEList[2]);
     }
+
+    public void TitleSelect()
+    {
+        audioSource.PlayOneShot(SEList[0]);
+    }
+
+    public void TitleKettei()
+    {
+        audioSource.PlayOneShot(SEList[1]);
+    }
+
+    public void ToMain()
+    {
+        audioSource.PlayOneShot(SEList[2]);
+    }
 }

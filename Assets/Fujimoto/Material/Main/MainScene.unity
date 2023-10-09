@@ -2375,12 +2375,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 364992190408245360, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 364992190408245360, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 148
+      value: 586
       objectReference: {fileID: 0}
     - target: {fileID: 364992190408245360, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 177
+      value: 387
       objectReference: {fileID: 0}
     - target: {fileID: 1260282104762546123, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: cd
@@ -2404,11 +2408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4921565988014199911, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -237
+      value: -697
       objectReference: {fileID: 0}
     - target: {fileID: 4921565988014199911, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 170
+      value: 365
       objectReference: {fileID: 0}
     - target: {fileID: 4977895163399081019, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_Pivot.x
@@ -2494,9 +2498,25 @@ PrefabInstance:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7019520829578778013, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019520829578778013, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7214686269888601639, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_Text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214686269888601639, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214686269888601639, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7214686269888601639, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_FontData.m_Alignment
