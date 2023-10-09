@@ -35,6 +35,12 @@ public class StudentStateManager : MonoBehaviour
     private float startTimer;
     private float currentTimer;
 
+    //パーティクル
+    [SerializeField] GameObject particl_ZZZ;
+    [SerializeField] GameObject particl_WakeUp;
+
+    private GameObject Unchi;
+    private GameObject Unchi_Mark2;
 
     //デバック用　経過秒数表示
     //[SerializeField] TextMeshProUGUI timeText;
@@ -85,6 +91,10 @@ public class StudentStateManager : MonoBehaviour
         //ノーマル状態
         if (currentState == StudentState.nomal)
         {
+            //ZZZを消す。
+            Destroy(Unchi);
+
+
             if (sleepTimeList.Count > currentSleepTime)
             {
                 //指定した時間が経過
@@ -114,6 +124,10 @@ public class StudentStateManager : MonoBehaviour
         //眠っている時
         if(currentState == StudentState.sleep)
         {
+            //ZZZエフェクト
+            Unchi = Instantiate(particl_ZZZ, transform.position, Quaternion.identity);
+
+
             if (awakeTimeList.Count > m_awakeTime)
             {
                 Debug.Log("何回起きたか" + currentAwakeTime);
@@ -146,20 +160,12 @@ public class StudentStateManager : MonoBehaviour
                 StateChange(currentState);
             }
         }
-        ////
-        //else if(currentState == StudentState.nomal_slept)
-        //{
-        //    //寝てたら強制的に起こす。
-        //    if (Time.time >= awakeTimeList[currentAwakeTime])
-        //    {
-        //        //
-        //        currentState = StudentState.nomal;
-        //        OnAwake(currentSleepTime);
-
-        //        //起こされた回数を加算
-        //        currentAwakeTime++;
-        //    }
-        //}
+        //
+        else if (currentState == StudentState.nomal_slept)
+        {
+            //ZZZを消す。
+            Destroy(Unchi);
+        }
     }
 
 
@@ -175,14 +181,14 @@ public class StudentStateManager : MonoBehaviour
         animator.SetBool("sleep", false);
 
         //SE再生等
-
+        Unchi_Mark2 = Instantiate(particl_WakeUp, transform.position, Quaternion.identity);
 
         ////起こさずに放置していた時の例外処理
         //if(m_awakeTime < currentSleepTime)
         //{
         //    m_awakeTime = currentSleepTime;
 
-            
+
         //}
 
         //眠る最大回数を超えていたら
@@ -205,6 +211,10 @@ public class StudentStateManager : MonoBehaviour
         //通常時
         if(studentState01 == StudentState.nomal || studentState01 == StudentState.nomal_slept)
         {
+            ////ZZZを消す。
+            //Destroy(Unchi);
+
+
             //sleepingUI.gameObject.SetActive(false);
 
             //アニメーション
