@@ -10,9 +10,16 @@ public class FadeManager : MonoBehaviour
 {
     [SerializeField] Canvas fadeCanvas;
 
+    [SerializeField] Image NonMouse;
+    [SerializeField] bool nonMouseFlag;
+
     // Start is called before the first frame update
     void Start()
     {
+        nonMouseFlag = true;
+        
+
+
         //フェードイン
         //オブジェクト下の画像を動かしながら、透明度を下げるゾ
         //子オブジェクトを取得して、バラバラに表示させる処理
@@ -41,8 +48,24 @@ public class FadeManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        //時間経過で、パネルをオフにする
+        if(Time.time >= 1.8f)
+        {
+            nonMouseFlag = false;
+        }
+
+        if (nonMouseFlag == true)
+            NonMouse.enabled = true;
+        else if (nonMouseFlag == false)
+            NonMouse.enabled = false;
+    }
+
     public void OnFadeOut()
     {
+        nonMouseFlag = true;
+
         //フェードアウト
         //オブジェクト下の画像を動かしながら、透明度を上げるゾ
         //子オブジェクトを取得して、バラバラに表示させる処理
