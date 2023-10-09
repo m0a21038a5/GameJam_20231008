@@ -114,16 +114,28 @@ public class StudentStateManager : MonoBehaviour
         //眠っている時
         if(currentState == StudentState.sleep)
         {
-            //寝てたら強制的に起こす。
-            if (currentTimer >= awakeTimeList[currentAwakeTime])
+            if (awakeTimeList.Count > m_awakeTime)
             {
-                //
-                currentState = StudentState.nomal;
-                OnAwake(currentSleepTime);
+                Debug.Log("何回起きたか" + currentAwakeTime);
 
-                //起こされた回数を加算
-                currentAwakeTime++;
-            }
+
+                //強制的に起こす。
+                if (currentTimer >= awakeTimeList[currentAwakeTime])
+                {
+                    Debug.Log("何回起きたか" + currentAwakeTime);
+
+                    //
+                    currentState = StudentState.nomal;
+                    OnAwake(currentSleepTime);
+
+
+                    if (awakeTimeList.Count > m_awakeTime)
+                    {
+                        //起きた回数を加算。
+                        currentAwakeTime++;
+                    }
+
+                }
                 ////一度だけ呼び出す Dotween
                 //if (!onece)
                 //{
@@ -132,6 +144,7 @@ public class StudentStateManager : MonoBehaviour
                 //}
 
                 StateChange(currentState);
+            }
         }
         ////
         //else if(currentState == StudentState.nomal_slept)

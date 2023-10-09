@@ -583,11 +583,11 @@ GameObject:
   - component: {fileID: 1408775868}
   m_Layer: 0
   m_Name: BGMManger
-  m_TagString: Untagged
+  m_TagString: SoundManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1408775868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4042163428567251091, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4921565988014199911, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1528,6 +1528,294 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 665108525865995582, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 810582788653380557, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040697500264562004, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712680721980079824, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388920562618589227, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030439473316088734, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679232910441232302, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685877848109451171, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6368819102649247312, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
       propertyPath: m_Name
       value: Students
@@ -1571,6 +1859,186 @@ PrefabInstance:
     - target: {fileID: 6663469047406840932, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812059589498284756, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466392080928041487, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820386443770191679, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192777814718844174, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[0]
+      value: 3.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[1]
+      value: 6.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[2]
+      value: 11.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[3]
+      value: 13.767
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[4]
+      value: 18.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[5]
+      value: 20.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[6]
+      value: 25.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683604858409764928, guid: ac9df9e310f2c284ba4744e50c331b6d, type: 3}
+      propertyPath: awakeTimeList.Array.data[7]
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
