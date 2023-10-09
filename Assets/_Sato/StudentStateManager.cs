@@ -82,6 +82,16 @@ public class StudentStateManager : MonoBehaviour
 
     void Update()
     {
+        animator = GetComponent<Animator>();
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("awake"))
+        {
+            awakeUI.gameObject.SetActive(true);
+        }
+        else
+        {
+            awakeUI.gameObject.SetActive(false);
+        }
+
         ////ーーーーーーーーーーーーーーーーー動作確認デバック用　後で消す。ーーーーーーーーーーーー
         //if (Input.GetMouseButtonDown(0))
         //{
@@ -99,17 +109,21 @@ public class StudentStateManager : MonoBehaviour
         //{
         //    StateChange(currentState = StudentState.nomal_slept);
         //}
+
+        
+
+
         //ノーマル状態
         if (currentState == StudentState.nomal)
         {
-            if (AwakeUIFlag == true)
-            {
-                awakeUI.gameObject.SetActive(true);
-            }
-            else
-            {
-                awakeUI.gameObject.SetActive(false);
-            }
+            //if (AwakeUIFlag == true)
+            //{
+            //    awakeUI.gameObject.SetActive(true);
+            //}
+            //else
+            //{
+            //    awakeUI.gameObject.SetActive(false);
+            //}
 
             if (sleepTimeList.Count > currentSleepTime)
             {
@@ -140,6 +154,8 @@ public class StudentStateManager : MonoBehaviour
         //眠っている時
         if(currentState == StudentState.sleep)
         {
+            //awakeUI.gameObject.SetActive(false);
+
             if (awakeTimeList.Count > m_awakeTime)
             {
                 Debug.Log("何回起きたか" + currentAwakeTime);
@@ -175,7 +191,7 @@ public class StudentStateManager : MonoBehaviour
         //
         else if (currentState == StudentState.nomal_slept)
         {
-            awakeUI.gameObject.SetActive(false);
+            //awakeUI.gameObject.SetActive(false);
         }
     }
 
@@ -187,11 +203,11 @@ public class StudentStateManager : MonoBehaviour
         m_awakeTime++;
         //ここに、起こされた瞬間のレスポンス
         sleepingUI.gameObject.SetActive(false);
-        awakeUI.gameObject.SetActive(true);
-        AwakeUIFlag = true;
-        //一定経過後、Falseにする。
-        StartCoroutine(DelayOnAwake());
-        Debug.Log("起こされた");
+        //awakeUI.gameObject.SetActive(true);
+        //AwakeUIFlag = true;
+        ////一定経過後、Falseにする。
+        //StartCoroutine(DelayOnAwake());
+        //Debug.Log("起こされた");
 
 
         animator.SetBool("wakeUp", true);

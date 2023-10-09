@@ -81,6 +81,8 @@ public class DerectMouse_Title : MonoBehaviour, IPointerEnterHandler, IPointerEx
     //ƒNƒŠƒbƒN‚µ‚½Û
     public void OnPointerDown(PointerEventData eventData)
     {
+
+
         fadeManager.OnFadeOutWaitKOMIKOMI(NextSceneName);
     }
 }
