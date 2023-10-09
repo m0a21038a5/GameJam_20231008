@@ -12,10 +12,31 @@ public class ScoreRanking : MonoBehaviour
     string key = "CurrentScore";
 
     int StateCount;
+    [SerializeField] Image RankImage;
+    public List<Sprite> ImageList;
+    /*
+    0 = B,
+    1 = A,
+    2 = S
+    */
     // Start is called before the first frame update
     void Start()
     {        
-        StateCount = 1;        
+        StateCount = 1;
+        CurrentScore = PlayerPrefs.GetInt(key, 0);
+
+        if(CurrentScore < 50)
+        {
+            RankImage.sprite = ImageList[0]; 
+        }
+        else if(CurrentScore > 50 && CurrentScore < 100)
+        {
+            RankImage.sprite = ImageList[1];
+        }
+        else
+        {
+            RankImage.sprite = ImageList[2];
+        }
     }
 
     private void Update()
@@ -57,10 +78,12 @@ public class ScoreRanking : MonoBehaviour
                 });
                 break;
         }
+        /*
         if(Input.anyKey)
         {
             StateCount++;
         }
+        */
     }
 
 }

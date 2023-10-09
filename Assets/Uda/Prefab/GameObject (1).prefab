@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7247857472679934878}
   - component: {fileID: 1712496718769910258}
+  - component: {fileID: 3954480368594307837}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,8 +52,32 @@ MonoBehaviour:
   isPlayer_Sleeping: 0
   isPlayer: 0
   st: {fileID: 0}
-  AwakeTime: 0
+  Student: {fileID: 0}
   HitEffect: {fileID: 6228714824025732073, guid: 63b9ec9097c071049a9250a7694d2262, type: 3}
+  se: {fileID: 0}
+--- !u!136 &3954480368594307837
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8001884406878798296}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6685772718214539850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63,6 +88,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3176171867596261252, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}
       propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176171867596261252, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}
+      propertyPath: m_TagString
       value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 6025291827933138157, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}

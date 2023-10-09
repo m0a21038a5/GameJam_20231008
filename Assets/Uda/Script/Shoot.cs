@@ -10,6 +10,7 @@ public class Shoot : MonoBehaviour
     [SerializeField] float ShootSpeed;
     [SerializeField] ScoreText st;
     [SerializeField] GameObject ClickEffect;
+    [SerializeField] SEManager se;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +54,7 @@ public class Shoot : MonoBehaviour
             }
             B.GetComponent<Bullet>().TargetPosition = TargetPosition;
             B.GetComponent<Bullet>().RushSpeed = ShootSpeed;
+            B.GetComponent<Bullet>().se = se;
         }
     }
 }
