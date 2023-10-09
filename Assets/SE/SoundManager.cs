@@ -14,7 +14,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private SoundData[] soundDatas;
 
-    private AudioSource[] audioSourceList = new AudioSource[30];
+    private AudioSource[] audioSourceList = new AudioSource[2];
 
     // ï ñºÇÉLÅ[Ç∆ÇµÇΩä«óùópDictionary
     private Dictionary<string, SoundData> soundDictionary = new Dictionary<string, SoundData>();

@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
 
     public GameObject Student;
     [SerializeField] GameObject HitEffect;
-
+    public SEManager se;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,14 +37,16 @@ public class Bullet : MonoBehaviour
             {
                 st.PlusScore();
                 Student.GetComponent<StudentStateManager>().OnAwake();
+                se.Hit();
             }
             else if(isPlayer)
             {
                 st.DecreaseScore();
+                se.HitStudent();
             }
             else if(isFloor)
             {
-
+                se.Hit();
             }
         }
     }
