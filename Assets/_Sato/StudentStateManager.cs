@@ -126,7 +126,7 @@ public class StudentStateManager : MonoBehaviour
 
                     //
                     currentState = StudentState.nomal;
-                    OnAwake(currentSleepTime);
+                    OnAwake();
 
 
                     if (awakeTimeList.Count > m_awakeTime)
@@ -165,7 +165,7 @@ public class StudentStateManager : MonoBehaviour
 
 
     //起こされた時の処理　引数：起きた回数
-    public void OnAwake(int AwakeTime)  //OnAwake(studentStateManager(→インスタンス名).currentSleepTime)　で呼び出してください
+    public void OnAwake()  //OnAwake(studentStateManager(→インスタンス名).currentSleepTime)　で呼び出してください
     {
         m_awakeTime++;
         //ここに、起こされた瞬間のレスポンス
@@ -186,7 +186,7 @@ public class StudentStateManager : MonoBehaviour
         //}
 
         //眠る最大回数を超えていたら
-        if (AwakeTime > MaxSleepTime)
+        if (currentSleepTime > MaxSleepTime)
         {
             currentState = StudentState.nomal_slept;
 
