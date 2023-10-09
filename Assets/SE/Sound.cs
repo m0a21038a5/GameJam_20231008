@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour
 {
-    [SerializeField]
     private SoundManager soundManager;
 
+    void Start()
+    {
+        soundManager = GameObject.FindWithTag("SoundManager")?.GetComponent<SoundManager>();
+    }
 
-    // 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

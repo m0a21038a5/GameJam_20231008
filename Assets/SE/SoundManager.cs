@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour
             audioSourceList[i] = gameObject.AddComponent<AudioSource>();
         }
 
-        //soundDictionary‚É‚¹‚Á‚Æ
+        //soundDictionary‚ÉƒZƒbƒg
         foreach (var soundData in soundDatas)
         {
             soundDictionary.Add(soundData.name, soundData);

@@ -7,7 +7,8 @@ public class Shoot : MonoBehaviour
     [SerializeField] GameObject Bullet;
     PointerMove Pm;
     public Vector3 TargetPosition;
-    [SerializeField] float ShootSpeed; 
+    [SerializeField] float ShootSpeed;
+    [SerializeField] ScoreText st;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,15 @@ public class Shoot : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Vector3.Distance(FirstPoint, origin)))
             {
                 TargetPosition = hit.point;
+                if (hit.collider.gameObject.CompareTag("Floor"))
+                {
+                    B.GetComponent<Bullet>().isFloor = true;
+                }
+                else if(hit.collider.gameObject.CompareTag("Player"))
+                {
+                    B.GetComponent<Bullet>().st = GetComponent<ScoreText>();
+                    B.GetComponent<Bullet>().isPlayer_Sleeping = true;
+                }                
             }
             else
             {
