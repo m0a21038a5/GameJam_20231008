@@ -16,12 +16,15 @@ public class DerectMouse_Title : MonoBehaviour, IPointerEnterHandler, IPointerEx
     [SerializeField] string NextSceneName;
     [SerializeField] FadeManager fadeManager;
 
+    SEManager se;
     void Start()
     {
         //初期スケールを取得しておく
         StartX = this.transform.localScale.x;
         StartY = this.transform.localScale.y;
         StartZ = this.transform.localScale.z;
+
+        se = GameObject.FindGameObjectWithTag("SE").GetComponent<SEManager>();
     }
     //マウスカーソルが触れたかを検知する
     public void OnPointerEnter(PointerEventData eventData)
@@ -82,7 +85,7 @@ public class DerectMouse_Title : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerDown(PointerEventData eventData)
     {
 
-
+        se.ToMain();
         fadeManager.OnFadeOutWaitKOMIKOMI(NextSceneName);
     }
 }
