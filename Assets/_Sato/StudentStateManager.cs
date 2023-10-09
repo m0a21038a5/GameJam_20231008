@@ -52,6 +52,7 @@ public class StudentStateManager : MonoBehaviour
 
     bool onece;
     Vector3 pos;
+    public bool AwakeUIFlag;
 
     //public int rand;
 
@@ -101,7 +102,14 @@ public class StudentStateManager : MonoBehaviour
         //ノーマル状態
         if (currentState == StudentState.nomal)
         {
-
+            if (AwakeUIFlag == true)
+            {
+                awakeUI.gameObject.SetActive(true);
+            }
+            else
+            {
+                awakeUI.gameObject.SetActive(false);
+            }
 
             if (sleepTimeList.Count > currentSleepTime)
             {
@@ -180,6 +188,7 @@ public class StudentStateManager : MonoBehaviour
         //ここに、起こされた瞬間のレスポンス
         sleepingUI.gameObject.SetActive(false);
         awakeUI.gameObject.SetActive(true);
+        AwakeUIFlag = true;
         //一定経過後、Falseにする。
         StartCoroutine(DelayOnAwake());
         Debug.Log("起こされた");
@@ -270,5 +279,6 @@ public class StudentStateManager : MonoBehaviour
 
         // ○秒後に原点にアクティブを切る
         awakeUI.gameObject.SetActive(false);
+        AwakeUIFlag = false;
     }
 }

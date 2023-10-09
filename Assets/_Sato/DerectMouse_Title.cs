@@ -38,8 +38,8 @@ public class DerectMouse_Title : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
 
         GameObject a = this.GetComponent<Image>().gameObject;
-        a.GetComponent<Image>().color
-            = new Color(0 / 255f, 64f / 255f, 147 / 255f);
+        //a.GetComponent<Image>().color
+        //    = new Color(0 / 255f, 64f / 255f, 147 / 255f);
 
 
         Debug.Log("マウスが触れてるゾ");
@@ -62,8 +62,8 @@ public class DerectMouse_Title : MonoBehaviour, IPointerEnterHandler, IPointerEx
         //Maintext.text = "とっとと選びやがれ！なのです。";
 
         GameObject a = this.GetComponent<Image>().gameObject;
-        a.GetComponent<Image>().color
-            = new Color(255 / 255f, 64f / 255f, 255 / 255f);
+        //a.GetComponent<Image>().color
+        //    = new Color(255 / 255f, 64f / 255f, 255 / 255f);
 
 
         GameObject b = this.gameObject;

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Title/TitleScene.unity
     guid: b058f04d89270ec4bae44225d82e5c05
   - enabled: 1
-    path: Assets/_Sato/Test_Sato.unity
-    guid: 16d9651e419be844ea42e7ce8e00d868
+    path: Assets/Fujimoto/Material/Main/MainScene.unity
+    guid: 243bea2cf94863a4e918901a71c05a4a
   - enabled: 1
     path: Assets/Result/ResultScene.unity
     guid: 3f660d5380fb44344b1e38840057d63d
