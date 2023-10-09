@@ -27,7 +27,7 @@ public class StudentStateManager : MonoBehaviour
     [SerializeField] int currentSleepTime; //現在、何回目の眠りか。
     [SerializeField] int currentAwakeTime;
 
-    [SerializeField] TextMeshProUGUI sleepingUI;
+    //[SerializeField] TextMeshProUGUI sleepingUI;
     private int m_awakeTime;
     private int m_SirentSlept;
 
@@ -37,7 +37,7 @@ public class StudentStateManager : MonoBehaviour
 
 
     //デバック用　経過秒数表示
-    [SerializeField] TextMeshProUGUI timeText;
+    //[SerializeField] TextMeshProUGUI timeText;
 
     //アニメーション遷移
     private Animator animator;
@@ -51,12 +51,12 @@ public class StudentStateManager : MonoBehaviour
     {
         currentSleepTime = 0;
         MaxSleepTime = sleepTimeList.Count;
-        sleepingUI.gameObject.SetActive(false);
+        //sleepingUI.gameObject.SetActive(false);
 
         currentState = StudentState.nomal;
         StateChange(currentState);
 
-        pos = sleepingUI.transform.position;
+        //pos = sleepingUI.transform.position;
 
         animator = GetComponent<Animator>();
 
@@ -124,12 +124,12 @@ public class StudentStateManager : MonoBehaviour
                 //起こされた回数を加算
                 currentAwakeTime++;
             }
-                //一度だけ呼び出す Dotween
-                if (!onece)
-                {
-                    DoMoveText();
-                    onece = true;
-                }
+                ////一度だけ呼び出す Dotween
+                //if (!onece)
+                //{
+                //    //DoMoveText();
+                //    onece = true;
+                //}
 
                 StateChange(currentState);
         }
@@ -156,7 +156,7 @@ public class StudentStateManager : MonoBehaviour
     {
         m_awakeTime++;
         //ここに、起こされた瞬間のレスポンス
-        sleepingUI.gameObject.SetActive(false);
+        //sleepingUI.gameObject.SetActive(false);
 
         animator.SetBool("wakeUp", true);
         animator.SetBool("sleep", false);
@@ -192,7 +192,7 @@ public class StudentStateManager : MonoBehaviour
         //通常時
         if(studentState01 == StudentState.nomal || studentState01 == StudentState.nomal_slept)
         {
-            sleepingUI.gameObject.SetActive(false);
+            //sleepingUI.gameObject.SetActive(false);
 
             //アニメーション
             //animator.SetBool("sleep", false);
@@ -205,8 +205,8 @@ public class StudentStateManager : MonoBehaviour
         //睡眠状態中
         else if (studentState01 == StudentState.sleep)
         {
-            sleepingUI.gameObject.SetActive(true);
-            sleepingUI.text = "Z";
+            //sleepingUI.gameObject.SetActive(true);
+            //sleepingUI.text = "Z";
 
             //アニメーション　：　スリープを再生
             animator.SetBool("sleep", true);
@@ -218,14 +218,14 @@ public class StudentStateManager : MonoBehaviour
         }
     }
 
-    private void DoMoveText()
-    {
-        var tween = sleepingUI.rectTransform.DOLocalMove(new Vector3(10f, 8f, 0f), 0.9f)
-                                           .SetLoops(-1, LoopType.Restart)
-                                           .SetRelative();
+    //private void DoMoveText()
+    //{
+    //    var tween = sleepingUI.rectTransform.DOLocalMove(new Vector3(10f, 8f, 0f), 0.9f)
+    //                                       .SetLoops(-1, LoopType.Restart)
+    //                                       .SetRelative();
 
-        sleepingUI.DOFade(0.0f, 0.9f)
-            .SetLoops(-1, LoopType.Restart);
-            //.SetRelative();
-    }
+    //    sleepingUI.DOFade(0.0f, 0.9f)
+    //        .SetLoops(-1, LoopType.Restart);
+    //        //.SetRelative();
+    //}
 }
