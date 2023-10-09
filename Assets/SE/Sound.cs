@@ -9,6 +9,9 @@ public class Sound : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.FindWithTag("SoundManager")?.GetComponent<SoundManager>();
+
+        soundManager.Play("Title");
+
     }
 
     void Update()
