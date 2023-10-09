@@ -8,12 +8,14 @@ public class ScoreText : MonoBehaviour
 {
     [SerializeField] int ScorePlusCount;
     int ScoreCount;
+    int StudentNumber;
     [SerializeField] Text Scoretext;
     Countdown cd;
 
     bool Clear;
 
     string key = "CurrentScore";
+    string Wkey = "CurrentNumber";
 
     // ★クラスのNCMBObject（data）を作成
     NCMBObject data = new NCMBObject("data");
@@ -28,7 +30,7 @@ public class ScoreText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scoretext.text = "Score : " + ScoreCount + "p";
+        Scoretext.text = "Score : " + ScoreCount;
         if(cd.MaxCount <= 0 && !Clear)
         {
             Clear = true;
@@ -39,6 +41,7 @@ public class ScoreText : MonoBehaviour
     public void PlusScore()
     {
         ScoreCount += ScorePlusCount;
+        StudentNumber++;
     }
 
     public void isClear()
@@ -48,5 +51,6 @@ public class ScoreText : MonoBehaviour
         // ★データストア（「data」クラス）への登録
         data.SaveAsync();
         PlayerPrefs.SetInt(key,ScoreCount);
+        PlayerPrefs.SetInt(Wkey, StudentNumber);
     }
 }
