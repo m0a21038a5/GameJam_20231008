@@ -47,6 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetPosition: {x: 0, y: 0, z: 0}
   RushSpeed: 0
+  isFloor: 0
+  isPlayer_Sleeping: 0
+  isPlayer: 0
+  st: {fileID: 0}
+  AwakeTime: 0
+  HitEffect: {fileID: 6228714824025732073, guid: 63b9ec9097c071049a9250a7694d2262, type: 3}
 --- !u!1001 &6685772718214539850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,6 +64,14 @@ PrefabInstance:
     - target: {fileID: 3176171867596261252, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}
       propertyPath: m_Name
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025291827933138157, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025291827933138157, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7064246660643669453, guid: 3c737fe56e6ca0244aa16ac1c12c6dc6, type: 3}
       propertyPath: m_LocalScale.x

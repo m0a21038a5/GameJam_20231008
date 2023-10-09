@@ -17,6 +17,8 @@ public class ScoreText : MonoBehaviour
     string key = "CurrentScore";
     string Wkey = "CurrentNumber";
 
+    [SerializeField] int DecreaseNumber; 
+
     // ★クラスのNCMBObject（data）を作成
     NCMBObject data = new NCMBObject("data");
     // Start is called before the first frame update
@@ -44,6 +46,13 @@ public class ScoreText : MonoBehaviour
         StudentNumber++;
     }
 
+    public void DecreaseScore()
+    {
+        if (ScoreCount >= DecreaseNumber)
+        {
+            ScoreCount -= DecreaseNumber;
+        }
+    }
     public void isClear()
     {
         // ★scoreを「data」クラスに保存する

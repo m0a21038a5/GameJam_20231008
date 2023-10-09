@@ -100,7 +100,7 @@ public class FadeManager : MonoBehaviour
 
         //【テスト用】秒数で待つ
         // 指定した秒数だけ処理を待ちます。
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSecondsRealtime(2.0f);
 
         //シーンチェンジ
         SceneManager.LoadScene(GoToSceneName);

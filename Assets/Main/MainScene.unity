@@ -251,6 +251,7 @@ MonoBehaviour:
   TargetPosition: {x: 0, y: 0, z: 0}
   ShootSpeed: 15
   st: {fileID: 288357483}
+  ClickEffect: {fileID: 4905931689672234374, guid: bf603d1d859feca45b394347f57e209c, type: 3}
 --- !u!114 &288357483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScorePlusCount: 10
   Scoretext: {fileID: 1692434330}
+  DecreaseNumber: 5
 --- !u!114 &288357484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,7 +294,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeText: {fileID: 1692434332}
   MaxCount: 30
-  EndCount: 1
   fd: {fileID: 1692434331}
 --- !u!4 &288357486
 Transform:
@@ -758,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4042163428567251091, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4921565988014199911, guid: c94813f0b82cc6643b95445bfa9f19f9, type: 3}
       propertyPath: m_AnchoredPosition.x
