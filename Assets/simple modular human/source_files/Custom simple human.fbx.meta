@@ -1319,7 +1319,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1775,8 +1775,8 @@ ModelImporter:
       name: simple_custom_human|hello
       takeName: simple_custom_human|hello
       internalID: 0
-      firstFrame: 0
-      lastFrame: 29
+      firstFrame: 7.21
+      lastFrame: 21.76
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -2073,7 +2073,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
