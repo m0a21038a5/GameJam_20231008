@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class StudentStateManager : MonoBehaviour
 {
@@ -27,7 +28,8 @@ public class StudentStateManager : MonoBehaviour
     [SerializeField] int currentSleepTime; //現在、何回目の眠りか。
     [SerializeField] int currentAwakeTime;
 
-    //[SerializeField] TextMeshProUGUI sleepingUI;
+    [SerializeField] Image sleepingUI;
+    [SerializeField] Image awakeUI;
     private int m_awakeTime;
     private int m_SirentSlept;
 
@@ -35,12 +37,12 @@ public class StudentStateManager : MonoBehaviour
     private float startTimer;
     private float currentTimer;
 
-    //パーティクル
-    [SerializeField] GameObject particl_ZZZ;
-    [SerializeField] GameObject particl_WakeUp;
+    ////パーティクル
+    //[SerializeField] GameObject particl_ZZZ;
+    //[SerializeField] GameObject particl_WakeUp;
 
-    private GameObject Unchi;
-    private GameObject Unchi_Mark2;
+    //private GameObject Unchi;
+    //private GameObject Unchi_Mark2;
 
     //デバック用　経過秒数表示
     //[SerializeField] TextMeshProUGUI timeText;
@@ -57,16 +59,24 @@ public class StudentStateManager : MonoBehaviour
     {
         currentSleepTime = 0;
         MaxSleepTime = sleepTimeList.Count;
-        //sleepingUI.gameObject.SetActive(false);
+        sleepingUI.gameObject.SetActive(false);
+        awakeUI.gameObject.SetActive(false);
 
         currentState = StudentState.nomal;
-        StateChange(currentState);
+        //StateChange(currentState);
 
-        //pos = sleepingUI.transform.position;
+        pos = sleepingUI.transform.position;
 
         animator = GetComponent<Animator>();
 
         startTimer = Time.time;
+
+        //びっくりUI
+        awakeUI.rectTransform.DOLocalMove(new Vector3(10f, 8f, 0f), 0.3f)
+                                           .SetLoops(-1, LoopType.Restart)
+                                           .SetRelative();
+        //awakeUI.DOFade(0.0f, 0.9f)
+        //          .SetLoops(-1, LoopType.Restart);
     }
 
     void Update()
@@ -91,8 +101,6 @@ public class StudentStateManager : MonoBehaviour
         //ノーマル状態
         if (currentState == StudentState.nomal)
         {
-            //ZZZを消す。
-            Destroy(Unchi);
 
 
             if (sleepTimeList.Count > currentSleepTime)
@@ -124,10 +132,6 @@ public class StudentStateManager : MonoBehaviour
         //眠っている時
         if(currentState == StudentState.sleep)
         {
-            //ZZZエフェクト
-            Unchi = Instantiate(particl_ZZZ, transform.position, Quaternion.identity);
-
-
             if (awakeTimeList.Count > m_awakeTime)
             {
                 Debug.Log("何回起きたか" + currentAwakeTime);
@@ -150,12 +154,12 @@ public class StudentStateManager : MonoBehaviour
                     }
 
                 }
-                ////一度だけ呼び出す Dotween
-                //if (!onece)
-                //{
-                //    //DoMoveText();
-                //    onece = true;
-                //}
+                //一度だけ呼び出す Dotween
+                if (!onece)
+                {
+                    DoMoveText();
+                    onece = true;
+                }
 
                 StateChange(currentState);
             }
@@ -163,8 +167,7 @@ public class StudentStateManager : MonoBehaviour
         //
         else if (currentState == StudentState.nomal_slept)
         {
-            //ZZZを消す。
-            Destroy(Unchi);
+
         }
     }
 
@@ -175,13 +178,14 @@ public class StudentStateManager : MonoBehaviour
     {
         m_awakeTime++;
         //ここに、起こされた瞬間のレスポンス
-        //sleepingUI.gameObject.SetActive(false);
+        sleepingUI.gameObject.SetActive(false);
+        awakeUI.gameObject.SetActive(true);
+        //一定経過後、Falseにする。
+        StartCoroutine(DelayOnAwake());
+
 
         animator.SetBool("wakeUp", true);
         animator.SetBool("sleep", false);
-
-        //SE再生等
-        Unchi_Mark2 = Instantiate(particl_WakeUp, transform.position, Quaternion.identity);
 
         ////起こさずに放置していた時の例外処理
         //if(m_awakeTime < currentSleepTime)
@@ -215,7 +219,8 @@ public class StudentStateManager : MonoBehaviour
             //Destroy(Unchi);
 
 
-            //sleepingUI.gameObject.SetActive(false);
+            sleepingUI.gameObject.SetActive(false);
+            //awakeUI.gameObject.SetActive(false);
 
             //アニメーション
             //animator.SetBool("sleep", false);
@@ -228,7 +233,10 @@ public class StudentStateManager : MonoBehaviour
         //睡眠状態中
         else if (studentState01 == StudentState.sleep)
         {
-            //sleepingUI.gameObject.SetActive(true);
+            sleepingUI.gameObject.SetActive(true);
+            awakeUI.gameObject.SetActive(false);
+
+
             //sleepingUI.text = "Z";
 
             //アニメーション　：　スリープを再生
@@ -241,14 +249,25 @@ public class StudentStateManager : MonoBehaviour
         }
     }
 
-    //private void DoMoveText()
-    //{
-    //    var tween = sleepingUI.rectTransform.DOLocalMove(new Vector3(10f, 8f, 0f), 0.9f)
-    //                                       .SetLoops(-1, LoopType.Restart)
-    //                                       .SetRelative();
+    private void DoMoveText()
+    {
+        var tween =sleepingUI.rectTransform.DOLocalMove(new Vector3(10f, 8f, 0f), 0.9f)
+                                           .SetLoops(-1, LoopType.Restart)
+                                           .SetRelative();
 
-    //    sleepingUI.DOFade(0.0f, 0.9f)
-    //        .SetLoops(-1, LoopType.Restart);
-    //        //.SetRelative();
-    //}
+        sleepingUI.DOFade(0.0f, 0.9f)
+            .SetLoops(-1, LoopType.Restart);
+            //.SetRelative();
+    }
+
+
+    // コルーチン本体
+    private IEnumerator DelayOnAwake()
+    { 
+        // ○秒間待つ
+        yield return new WaitForSeconds(0.5f);
+
+        // ○秒後に原点にアクティブを切る
+        awakeUI.gameObject.SetActive(false);
+    }
 }
