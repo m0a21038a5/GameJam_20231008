@@ -15,7 +15,7 @@ public class ScoreRanking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {        
-        StateCount = 0;        
+        StateCount = 1;        
     }
 
     private void Update()
