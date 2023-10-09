@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using NCMB;
+using TMPro;
 
 public class ScoreText : MonoBehaviour
 {
     [SerializeField] int ScorePlusCount;
     int ScoreCount;
     int StudentNumber;
-    [SerializeField] Text Scoretext;
+    [SerializeField] TextMeshProUGUI Scoretext;
     Countdown cd;
 
     bool Clear;
